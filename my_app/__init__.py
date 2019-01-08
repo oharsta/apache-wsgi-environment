@@ -3,7 +3,8 @@ import os
 
 app = Flask(__name__)
 
+print("hello")
+
 @app.route('/')
 def hello_world():
-    print("hello")
     return f"Hello {os.environ['key']}"
